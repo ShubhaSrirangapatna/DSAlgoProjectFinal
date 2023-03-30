@@ -1,0 +1,730 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>130/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 30 12:16:33 CDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>358 seconds (358979 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Graph Representations page", "graph"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Practice questions Search the Array page and run code", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Arrays Using List page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>4</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Arrays Using List Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Arrays in Python Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Applications of Array Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Creating Linked List page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>9</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Practice questions Find Numbers With Even Number of Digits page and run code", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests registration link on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User registers successfully", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to queue page and click on  link Implementation using collections.deque", "Queue"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Deletion Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Basic Operations in List page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Implement Linked List in Python page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>8</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Practice questions Max Consecutive Ones page and run code", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>18</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to stack page and click on Implementation link", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Creating Linked List page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Creating Linked List Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for queue page", "Queue"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to registration page", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for queue page", "Queue"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "Queue"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Implement Linked List in Python Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for time complexity page", "DataStructures"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down entries", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests registration link on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to sign in page", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get error message below confirm password textbox", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to terminologies page", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for stack page", "Stack"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get error message below password textbox", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Traversal page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>8</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Introduction Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Graph page", "graph"</td>
+<td></td>
+<td>10</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Deletion Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to graph page and click on Graph Representations link", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Graph page", "graph"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying signout link in home page", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user tests sign in functionality with empty username textbox", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Implementation page", "Stack"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for terminologies page", "graph"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks login functionality", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Introduction Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Implementation page", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for valid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Implementation using collections.deque  page", "Queue"</td>
+<td></td>
+<td>4</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get error message for all fields empty below username textbox", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Queue page", "Queue"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to overview of trees page", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Types of Linked List Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to ds_algo portal home page", "Test DS Algo portal home page"</td>
+<td></td>
+<td>4</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Operations in Stack page", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for stack page", "Stack"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Applications of Array Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user navigates to ds algo home page", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests sign in link on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Types of Linked List page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>8</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Implementation page", "Stack"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User registers with invalid username and password", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Insertion Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Arrays Using List", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for overview of trees page", "graph"</td>
+<td></td>
+<td>10</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Insertion Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigates to register page", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>3</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Arrays Using List page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for overview of trees page", "graph"</td>
+<td></td>
+<td>8</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Types of Linked List Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Introduction page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Implement Linked List in Python Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for time complexity page", "DataStructures"</td>
+<td></td>
+<td>11</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Arrays in Python", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Implementation using collections.deque  page", "Queue"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Traversal Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for terminologies page", "graph"</td>
+<td></td>
+<td>10</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Deletion page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>8</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Applications of Array page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>4</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Introduction page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>3</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "DataStructures"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to time complexity page", "DataStructures"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user tests sign in functionality with empty password textbox", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Graph page", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Arrays in Python page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Insertion page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>8</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Applications of Array page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Graph Representations page", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Implementation using collections.deque page", "Queue"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Basic Operations in List Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Basic Operations in List page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>4</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Practice questions Squares of a Sorted Array page and run code", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to graph representations page and click on Practice Questions", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Graph Representations page", "graph"</td>
+<td></td>
+<td>10</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Creating Linked List Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Traversal Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Basic Operations In List Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Arrays in Python page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to practice questions page", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to practice questions page", "DataStructures"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@6f43c82</td></tr>
+</table><p>
+</body>
+</html>
